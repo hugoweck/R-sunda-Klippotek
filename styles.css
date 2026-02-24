@@ -4,8 +4,8 @@
   --surface-soft: #1d2330;
   --text: #f4f6fb;
   --muted: #b6bfd2;
-  --accent: #d4a95f;
-  --accent-strong: #f0c57b;
+  --accent: #3f7ae0;
+  --accent-strong: #71a4ff;
   --border: #2b3344;
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
@@ -31,8 +31,8 @@ body {
   padding-bottom: 3rem;
   border-bottom: 1px solid var(--border);
   background:
-    radial-gradient(circle at top right, rgba(212, 169, 95, 0.18), transparent 36%),
-    radial-gradient(circle at left, rgba(212, 169, 95, 0.12), transparent 32%);
+    linear-gradient(90deg, rgba(8, 12, 22, 0.86) 0%, rgba(8, 12, 22, 0.72) 36%, rgba(8, 12, 22, 0.2) 62%, rgba(8, 12, 22, 0.08) 100%),
+    url("råsunda klippotek.jpeg") center right / cover no-repeat;
 }
 
 .nav {
@@ -51,7 +51,8 @@ body {
 
 .hero-content {
   padding: 4rem 0 2rem;
-  max-width: 720px;
+  max-width: 560px;
+  margin-right: auto;
 }
 
 .eyebrow {
@@ -87,7 +88,7 @@ h2 {
 .btn {
   display: inline-block;
   background: var(--accent);
-  color: #1c1506;
+  color: #f4f8ff;
   font-weight: 700;
   text-decoration: none;
   border-radius: 999px;
@@ -100,9 +101,9 @@ h2 {
 }
 
 .btn-ghost {
-  background: transparent;
+  background: rgba(20, 33, 58, 0.38);
   color: var(--text);
-  border-color: var(--border);
+  border-color: rgba(113, 164, 255, 0.55);
 }
 
 .btn-small {
