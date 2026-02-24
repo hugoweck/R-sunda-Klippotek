@@ -45,13 +45,13 @@ function updateOpenStatus() {
 updateOpenStatus();
 
 
-function updateStickyHeader() {
-  const stickyHeader = document.querySelector('.sticky-header');
-  if (!stickyHeader) return;
+function updateHeaderBackground() {
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
 
-  const shouldShow = window.scrollY > 80;
-  stickyHeader.classList.toggle('visible', shouldShow);
+  const shouldBeBlack = window.scrollY > 50;
+  nav.classList.toggle('scrolled', shouldBeBlack);
 }
 
-window.addEventListener('scroll', updateStickyHeader, { passive: true });
-updateStickyHeader();
+window.addEventListener('scroll', updateHeaderBackground, { passive: true });
+updateHeaderBackground();
