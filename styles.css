@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 0;
+  padding: 1.2rem clamp(1rem, 2.6vw, 2.4rem);
   transition: background-color 0.3s ease;
 }
 
