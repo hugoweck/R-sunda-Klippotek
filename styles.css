@@ -53,6 +53,7 @@ body {
   padding: 4rem 0 2rem;
   max-width: 560px;
   margin-right: auto;
+  text-align: left;
 }
 
 .eyebrow {
@@ -83,6 +84,7 @@ h2 {
   gap: 0.8rem;
   margin-top: 1.6rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .btn {
