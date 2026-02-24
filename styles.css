@@ -1,0 +1,109 @@
+:root {
+  --blue-900: #052b5b;
+  --blue-700: #0a4b9a;
+  --blue-500: #1772dc;
+  --blue-100: #ddecff;
+  --text-light: #f5f9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f2f7ff;
+  color: #091f38;
+}
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  padding: clamp(2rem, 5vw, 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("råsunda klippotek.jpeg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(5, 43, 91, 0.85) 0%, rgba(5, 43, 91, 0.62) 34%, rgba(5, 43, 91, 0.2) 60%, rgba(5, 43, 91, 0.05) 100%);
+}
+
+.hero__content {
+  position: relative;
+  width: min(540px, 100%);
+  margin-left: clamp(0rem, 4vw, 4rem);
+  color: var(--text-light);
+  text-align: left;
+}
+
+.hero__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--blue-100);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.hero__subtitle {
+  margin: 1rem 0 2rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 46ch;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.65rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background-color: var(--blue-500);
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(5, 43, 91, 0.25);
+}
+
+.btn--secondary {
+  border: 1px solid rgba(221, 236, 255, 0.8);
+  background: rgba(5, 43, 91, 0.35);
+  color: var(--text-light);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 80vh;
+    background-position: 60% center;
+  }
+
+  .hero__overlay {
+    background: linear-gradient(180deg, rgba(5, 43, 91, 0.78) 0%, rgba(5, 43, 91, 0.45) 45%, rgba(5, 43, 91, 0.12) 100%);
+  }
+}
