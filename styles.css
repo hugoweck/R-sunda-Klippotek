@@ -217,11 +217,28 @@ li + li {
 
 @media (max-width: 560px) {
   .hero {
+    min-height: 62vh;
+    display: flex;
+    align-items: flex-end;
     background-position: center center, center center;
   }
 
   .hero-content {
-    padding-top: 2.5rem;
+    padding-top: 0;
+    padding-bottom: 1.2rem;
+  }
+
+  .hero-content h1,
+  .hero-lead {
+    display: none;
+  }
+
+  .hero-actions {
+    margin-top: 0.8rem;
+  }
+
+  .hero-actions .btn-ghost {
+    display: none;
   }
 
   .nav {
