@@ -43,3 +43,15 @@ function updateOpenStatus() {
 }
 
 updateOpenStatus();
+
+
+function updateStickyHeader() {
+  const stickyHeader = document.querySelector('.sticky-header');
+  if (!stickyHeader) return;
+
+  const shouldShow = window.scrollY > 80;
+  stickyHeader.classList.toggle('visible', shouldShow);
+}
+
+window.addEventListener('scroll', updateStickyHeader, { passive: true });
+updateStickyHeader();
